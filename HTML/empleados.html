@@ -1,0 +1,45 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Registro de Empleados </title>
+  <link rel="stylesheet" href="../CSS/clientes.css">
+</head>
+<body>
+
+  <h1>Registro de Empleados </h1>
+
+  <section class="registro">
+    <h2>Registrar nuevo empleado</h2>
+
+    <form action="../PHP/empleados_registro.php" method="POST">
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre" placeholder="Ej. Juan Pérez" required>
+
+      <label>Correo electrónico:</label>
+      <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+
+      <label>Contraseña:</label>
+      <input type="password" name="contraseña" placeholder="" required>
+
+      <label>Área o puesto:</label>
+      <select name="area" required>
+        <option value="">Selecciona...</option>
+        <option value="ventas">Ventas</option>
+        <option value="almacen">Almacén</option>
+        <option value="transporte">Transporte</option>
+        <option value="supervisor">Supervisor</option>
+      </select>
+
+      <button type="submit">Registrar empleado</button>
+    </form>
+
+    <p>¿Ya estás registrado? <a href="../index.html">Ir a tu panel</a></p>
+  </section>
+
+</body>
+</html>

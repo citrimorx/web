@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Pedido - Limones Frescos</title>
+  <link rel="stylesheet" href="CSS/limones.css">
+  <style>
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #006600;
+    }
+
+    form {
+      background-color: #e8f5e9;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    select, input[type="number"], input[type="text"], input[type="email"] {
+      width: 95%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .nota {
+      margin-top: 15px;
+      color: #b71c1c;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-align: left;
+    }
+
+    button {
+      background-color: #008000;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #66bb66;
+    }
+
+    .volver {
+      text-align: center;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Realizar Pedido</h1>
+  </header>
+
+  <main>
+    <form action="procesar_pedidos.php" method="POST">
+      <h2>Selecciona cómo deseas adquirir los limones</h2>
+
+      <!-- Campo nombre -->
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+
+      <!-- Campo correo -->
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+      <!-- Cantidad por caja -->
+      <label for="por_caja">Desea adquirir por caja (cada caja contiene 30 kg):</label>
+      <input type="number" id="por_caja" name="por_caja" placeholder="Número de cajas" min="0" value="0">
+
+      <!-- Cantidad por kg -->
+      <label for="por_kg">Desea adquirir por kilo:</label>
+      <input type="number" id="por_kg" name="por_kg" placeholder="Cantidad en kg" min="0" value="0">
+
+      <!-- Recordatorio -->
+      <p class="nota">⚠️ Recuerda: Los pedidos se recogen en el lugar, no realizamos envíos.</p>
+
+      <button type="submit">Realizar pedido</button>
+    </form>
+
+    <div class="volver">
+      <button onclick="location.href='index.html'">Volver al inicio</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Limones Frescos | Directo del campo a tu hogar</p>
+  </footer>
+
+</body>
+</html>

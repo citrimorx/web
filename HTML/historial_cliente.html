@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de Compras</title>
+  <link rel="stylesheet" href="../CSS/historial_cliente.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Historial de Compras</h1>
+
+    <form action="../PHP/historial_cliente.php" method="POST">
+      <label for="correo">Nombre del cliente:</label>
+      <input type="nombre" id="correo" name="nombre" placeholder="jose perez" required>
+
+      <button type="submit">Ver historial</button>
+    </form>
+
+    <section id="historial">
+      <!-- Aquí se mostrarán las compras luego de consultar el PHP -->
+    </section>
+  </div>
+
+</body>
+</html>

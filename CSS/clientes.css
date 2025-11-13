@@ -1,0 +1,86 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0fff0; /* Verde muy claro de fondo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
+}
+
+/* ======== TITULOS ======== */
+h1, h2 {
+  color: #006600; /* Verde oscuro */
+  text-align: center;
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, button {
+  margin: 8px 0;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* ======== BOTONES ======== */
+button {
+  background-color: #008000; /* Verde principal */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #66bb66; /* Verde más claro al pasar el mouse */
+}
+
+/* ======== TABLA ======== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #e8f5e9;
+  color: #006600;
+}
+
+/* ======== BOTON ELIMINAR ======== */
+.eliminar {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+.eliminar:hover {
+  background-color: #e60000;
+}

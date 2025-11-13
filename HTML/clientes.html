@@ -1,0 +1,36 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Clientes</title>
+  <link rel="stylesheet" href="../CSS/clientes.css">
+</head>
+<body>
+
+  <h1>Registro del Clientes</h1>
+
+  <section class="registro">
+    <h2>Registrar nuevo cliente</h2>
+
+    <form action="../PHP/cliente_registro.php" method="POST">
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre" placeholder="Ej. Ana López" required>
+
+      <label>Correo electrónico:</label>
+      <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+
+      <label>Teléfono:</label>
+      <input type="text" name="telefono" placeholder="Ej. 5512345678" required>
+
+      <button type="submit">Registrar cliente</button>
+    </form>
+  </section>
+
+  <hr>
+
+</body>
+</html>
